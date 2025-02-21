@@ -72,9 +72,11 @@ The five oldest trees recorded in 2001 are (top 2): Pinus resinosa and (last 3):
 
 ```{r}
 #7
-tree_dat %>%
+sampled_trees_2002 <- tree_dat %>%
   filter(year == "2002") %>%
   slice_sample(prop = .3)
+
+nrow(sampled_trees_2002)
 ```
 
 There are 687 trees in a 30% sample of those recorded in 2002.
