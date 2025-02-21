@@ -107,6 +107,8 @@ tree_dat %>%
   select(-stand)
 glimpse(tree_dat)
 ```
+The stand column was removed.
+
 
 ```{r}
 # 11
@@ -114,6 +116,7 @@ tree_dat %>%
   select(matches("ID"))
 glimpse(tree_dat)
 ```
+The columns treeID and standID were shown.
 
 ```{r}
 # 12
@@ -121,6 +124,7 @@ tree_dat %>%
   select(matches("ID|stand"))
 glimpse(tree_dat)
 ```
+The columns treeID, standID, and stand were shown.
 
 ```{r}
 # 13
@@ -131,6 +135,7 @@ tree_dat <- tree_dat %>%
   )
 glimpse(tree_dat)
 ```
+This renaming was permanent.
 
 ```{r}
 # 14
@@ -257,3 +262,4 @@ slowest_species <- species_growth %>%
   slice_tail(n = 3)
 ```
 
+The three fastest growing species are (1) Pinus resinosa, (2) Pinus banksiana, and (3) Populus tremuloides. The three slowest growing species are (1) Quercus rubra, (2) Larix laricina, and (3) Thuja occidentalis. 
