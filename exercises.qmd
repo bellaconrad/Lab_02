@@ -9,17 +9,15 @@ editor: visual
 #Install
 
 ```{r}
-install.packages("dplyr")
-```
-
-```{r}
 library(dplyr)
 ```
+
 
 #Questions
 
 ```{r}
 #1
+tree_dat <- read.csv("~/github/Lab_02/data/doi_10_5061_dryad_18pm5__v20170130/Itter_et_al_EAP16-0589.R1/tree_dat.csv")
 glimpse(tree_dat)
 ```
 
