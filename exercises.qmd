@@ -263,3 +263,12 @@ slowest_species <- species_growth %>%
 ```
 
 The three fastest growing species are (1) Pinus resinosa, (2) Pinus banksiana, and (3) Populus tremuloides. The three slowest growing species are (1) Quercus rubra, (2) Larix laricina, and (3) Thuja occidentalis. 
+
+
+# Image of Pinus resinosa
+
+```{r}
+library(knitr)
+include_graphics("images/fastest_species_Pinus_resinosa.jpg")
+```
+
