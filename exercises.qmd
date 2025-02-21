@@ -1,5 +1,5 @@
 ---
-title: "exercises"
+title: "Exercises"
 format: html
 editor: visual
 ---
@@ -103,26 +103,26 @@ The three smallest trees measure that year had the tree IDs of 50, 56, and 36.'
 
 ```{r}
 #10
-tree_dat %>% 
-  select(-stand)
-glimpse(tree_dat)
+remove_stand_data <- tree_dat %>% 
+  select(-stand) 
+glimpse(remove_stand_data)
 ```
 The stand column was removed.
 
 
 ```{r}
 # 11
-tree_dat %>% 
+ID_data <- tree_dat %>% 
   select(matches("ID"))
-glimpse(tree_dat)
+glimpse(ID_data)
 ```
 The columns treeID and standID were shown.
 
 ```{r}
 # 12
-tree_dat %>% 
+ID_stand_data <- tree_dat %>% 
   select(matches("ID|stand"))
-glimpse(tree_dat)
+glimpse(ID_stand_data)
 ```
 The columns treeID, standID, and stand were shown.
 
